@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.3px;
+}
+.bounce {
+  animation-name: bounce;
+}
+.header span {
+  color: rgb(71, 151, 103);
+  margin: 0px;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: scale(1, 1);
+  }
+
+  40% {
+    transform: scale(1.75, 0.65);
+  }
+
+  45% {
+    transform: scale(1.75, 0.65);
+  }
+
+  70% {
+    transform: scale(1.25, 0.75);
+  }
+
+  90% {
+    transform: scale(1.15, 0.85);
+  }
+}
+.header span:hover {
+  color: rgb(37, 65, 46);
+}
